@@ -16,7 +16,7 @@ module_information = ModuleInformation( # Only service_name and module_supported
         # hidden: hides module from CLI help options
         # jwt_system_enable: handles bearer and refresh tokens automatically, though currently untested
         # private: override any public modules, only enabled with the -p/--private argument, currently broken
-    global_settings = {email, pwd, qual = parse_cfg()
+    global_settings = {email, pwd, qual = parse_cfg()}
 		client.auth(email, pwd)
 		label = client.get_sub_info()},
     global_storage_variables = [],
