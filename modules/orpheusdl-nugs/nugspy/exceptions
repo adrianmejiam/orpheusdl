@@ -1,0 +1,5 @@
+class AuthenticationError(Exception):
+	pass
+
+class IneligibleError(Exception):
+	pass
