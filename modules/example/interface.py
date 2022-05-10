@@ -1,9 +1,24 @@
-from utils.models import *
-from utils.utils import create_temp_filename
+import os																			
+import re
+import sys
+import json
+import time
+import platform
+import argparse
+import traceback
+
+import nugs_api.py
+import requests
+from tqdm import tqdm
+from mutagen import File
+from mutagen.mp4 import MP4
+from mutagen.flac import FLAC
+
+client = nugs_api.py.Client()
 
 
 module_information = ModuleInformation( # Only service_name and module_supported_modes are mandatory
-    service_name = 'Example',
+    service_name = 'Nugs',
     module_supported_modes = ModuleModes.download | ModuleModes.lyrics | ModuleModes.covers | ModuleModes.credits,
     flags = ModuleFlags.hidden,
     # Flags:
@@ -11,12 +26,14 @@ module_information = ModuleInformation( # Only service_name and module_supported
         # hidden: hides module from CLI help options
         # jwt_system_enable: handles bearer and refresh tokens automatically, though currently untested
         # private: override any public modules, only enabled with the -p/--private argument, currently broken
-    global_settings = {},
+    global_settings = {email, pwd, qual = parse_cfg()
+		client.auth(email, pwd)
+		label = client.get_sub_info()},
     global_storage_variables = [],
-    session_settings = {},
+    session_settings = {'username': '', 'password': ''},
     session_storage_variables = ['access_token'],
-    netlocation_constant = 'example', 
-    test_url = 'https://player.example.com/track/idhere',
+    netlocation_constant = 'nugs', 
+    test_url = 'https://play.nugs.net/index.html#/catalog/recording/([0-9]+/?$)',
     url_constants = { # This is the default if no url_constants is given. Unused if custom_url_parsing is flagged
         'track': DownloadTypeEnum.track,
         'album': DownloadTypeEnum.album,
