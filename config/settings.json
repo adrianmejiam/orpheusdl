@@ -1,7 +1,7 @@
 {
     "global": {
         "general": {
-            "download_path": "./data/data/com.termux/files/home/storage/music",
+            "download_path": "/content/drive/Shareddrives/Hi-Res",
             "download_quality": "hifi",
             "search_limit": 10
         },
@@ -59,18 +59,33 @@
     },
     "extensions": {},
     "modules": {
+        "orpheusdl-napster": {
+            "api_key": "ZTJlOWNhZGUtNzlmZS00ZGU2LTkwYjMtZDk1ODRlMDkwODM5",
+            "customer_secret": "MTRjZTVjM2EtOGVlZi00OTU3LWFmNjktNTllODFhNmYyNzI5",
+            "requested_netloc": "napster",
+            "username": "napstermex1@exdonuts.com",
+            "password": "Mexico_2022"
+        },
+        "orpheusdl-bugsmusic": {
+            "username": "YMH5117@NAVER.COM",
+            "password": "4315117"
+        },
+        "orpheusdl-tidal": {
+            "tv_token": "7m7Ap0JC9j1cOM3n",
+            "tv_secret": "vRAdA108tlvkJpTsGZS8rGZ7xTlbJ0qaZ2K9saEzsgY=",
+            "mobile_atmos_token": "dN2N95wCyEBTllu4",
+            "mobile_default_token": "WAU9gXp3tHhK4Nns",
+            "enable_mobile": true,
+            "force_non_spatial": false,
+            "prefer_ac4": false,
+            "fix_mqa": true
+        },
         "orpheusdl-qobuz": {
             "app_id": "950096963",
             "app_secret": "979549437fcc4a3faad4867b5cd25dcb",
             "quality_format": "{sample_rate}kHz {bit_depth}bit",
             "username": "sublime5@exdonuts.com",
             "password": "Mexico_2022"
-        },
-        "orpheusdl-tidal": {
-            "tv_token": "7m7Ap0JC9j1cOM3n",
-            "tv_secret": "vRAdA108tlvkJpTsGZS8rGZ7xTlbJ0qaZ2K9saEzsgY=",
-            "mobile_token": "dN2N95wCyEBTllu4",
-            "enable_mobile": true
         }
     }
 }
