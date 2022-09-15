@@ -1,7 +1,7 @@
 
     "global": {
         "general": {
-            "download_path": "/content/drive/Shareddrives/Hi-Res",
+            "download_path": "/data/data/com.termux/files/home/storage/music",
             "download_quality": "hifi",
             "search_limit": 10
         },
@@ -79,7 +79,7 @@
             "app_id": "950096963",
             "app_secret": "979549437fcc4a3faad4867b5cd25dcb",
             "quality_format": "{sample_rate}kHz {bit_depth}bit",
-            "username": "sublime5@exdonuts.com",
+            "username": "rsryebc710@otelekom.com",
             "password": "Mexico_2022"
         },
         "orpheusdl-tidal": {
