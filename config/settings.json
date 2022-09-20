@@ -4,9 +4,9 @@
 
         "general": {
 
-            "download_path": "
+            "download_path": ",/data/data/com.termux/files/home/storage/music",
 
-            "download_quality": "hifi",/data/data/com.termux/files/home/storage/music",
+            "download_quality": "hifi"
 
             "search_limit": 10
 
