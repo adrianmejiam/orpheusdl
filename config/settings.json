@@ -1,210 +1,106 @@
 {
-
     "global": {
-
         "general": {
-
-            "download_path": ",/data/data/com.termux/files/home/storage/music",
-
-            "download_quality": "hifi"
-
+            "download_path": "/data/data/com.termux/files/home/storage/music",
+            "download_quality": "hifi",
             "search_limit": 10
-
         },
-
         "artist_downloading": {
-
             "return_credited_albums": true,
-
             "separate_tracks_skip_downloaded": true
-
         },
-
         "formatting": {
-
             "album_format": "{name}{explicit}",
-
             "playlist_format": "{name}{explicit}",
-
             "track_filename_format": "{track_number}. {name}",
-
             "single_full_path_format": "{name}",
-
             "enable_zfill": true,
-
             "force_album_format": true
-
         },
-
         "codecs": {
-
             "proprietary_codecs": true,
-
             "spatial_codecs": true
-
         },
-
         "module_defaults": {
-
             "lyrics": "default",
-
             "covers": "default",
-
             "credits": "default"
-
         },
-
         "lyrics": {
-
             "embed_lyrics": true,
-
             "embed_synced_lyrics": false,
-
             "save_synced_lyrics": true
-
         },
-
         "covers": {
-
             "embed_cover": true,
-
             "main_compression": "high",
-
             "main_resolution": 1400,
-
             "save_external": false,
-
             "external_format": "png",
-
             "external_compression": "low",
-
             "external_resolution": 3000,
-
             "save_animated_cover": true
-
         },
-
         "advanced": {
-
             "advanced_login_system": false,
-
             "codec_conversions": {
-
                 "alac": "flac",
-
                 "wav": "flac"
-
             },
-
             "conversion_flags": {
-
                 "flac": {
-
                     "compression_level": "5"
-
                 }
-
             },
-
             "conversion_keep_original": false,
-
             "cover_variance_threshold": 8,
-
             "debug_mode": false,
-
             "disable_subscription_checks": false,
-
             "enable_undesirable_conversions": false,
-
             "ignore_existing_files": false,
-
             "ignore_different_artists": true
-
         }
-
     },
-
     "extensions": {},
-
     "modules": {
-
-        "tidal": {
-
-            "tv_token": "7m7Ap0JC9j1cOM3n",
-
-            "tv_secret": "vRAdA108tlvkJpTsGZS8rGZ7xTlbJ0qaZ2K>
-
-            "mobile_atmos_token": "dN2N95wCyEBTllu4",
-
-            "mobile_default_token": "WAU9gXp3tHhK4Nns",
-
-            "enable_mobile": true,
-
-            "force_non_spatial": false,
-
-            "prefer_ac4": false,
-
-            "fix_mqa": true
-
-        },
-
-        "nugs": {
-
-            "username": "",
-
-            "password": "",
-
-            "client_id": "Eg7HuH873H65r5rt325UytR5429",
-
-            "dev_key": "x7f54tgbdyc64y656thy47er4"
-
-        },
-      "bugs": {
-
-            "username": "",
-
-            "password": ""
-
-        },
-
-        "qobuz": {
-
-            "app_id": "640631854",
-
-            "app_secret": "7b500f6fdde47775c62ed3437a94ebc0",
-
-            "quality_format": "{sample_rate}kHz {bit_depth}bi>
-
-            "username": "pqnjnqj691@ondania.com",
-
-            "password": "Mexico_2022"
-
-        },
-
-        "napster": {
-
-            "api_key": "ZTJlOWNhZGUtNzlmZS00ZGU2LTkwYjMtZDk1O>
-
-            "customer_secret": "MTRjZTVjM2EtOGVlZi00OTU3LWFmN>
-
-            "requested_netloc": "napster",
-
-            "username": "adrianmex1@otelekom.com",
-
-            "password": "Mexico_2022"
-
-        },
-
         "kkbox": {
-
             "kc1_key": "7f1a68f00b747f4ac1469c72e7ef492c",
-
             "email": "emmett@articmine.com",
-
             "password": "Mexico_2022"
-
+        },
+        "nugs": {
+            "username": "",
+            "password": "",
+            "client_id": "Eg7HuH873H65r5rt325UytR5429",
+            "dev_key": "x7f54tgbdyc64y656thy47er4"
+        },
+        "bugs": {
+            "username": "",
+            "password": ""
+        },
+        "napster": {
+            "api_key": "ZTJlOWNhZGUtNzlmZS00ZGU2LTkwYjMtZDk1ODRlMDkwODM5",
+            "customer_secret": "MTRjZTVjM2EtOGVlZi00OTU3LWFmNjktNTllODFhNmYyNzI5",
+            "requested_netloc": "napster",
+            "username": "adrianmex1@otelekom.com",
+            "password": "Mexico_2022"
+        },
+        "qobuz": {
+            "app_id": "640631854",
+            "app_secret": "7b500f6fdde47775c62ed3437a94ebc0",
+            "quality_format": "{sample_rate}kHz {bit_depth}bit",
+            "username": "pqnjnqj691@ondania.com",
+            "password": "Mexico_2022"
+        },
+        "tidal": {
+            "tv_token": "7m7Ap0JC9j1cOM3n",
+            "tv_secret": "vRAdA108tlvkJpTsGZS8rGZ7xTlbJ0qaZ2K9saEzsgY=",
+            "mobile_atmos_token": "dN2N95wCyEBTllu4",
+            "mobile_default_token": "WAU9gXp3tHhK4Nns",
+            "enable_mobile": true,
+            "force_non_spatial": false,
+            "prefer_ac4": false,
+            "fix_mqa": true
         }
-
     }
-
 }
